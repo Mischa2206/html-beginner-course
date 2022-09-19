@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 34px;
+  color: rgba(255, 255, 255, 0.88);
+  text-align: center;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+p {
+  font-family: Roboto;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0px
+}
+
+.author {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.link {
+  transition: color 0.15s, text-decoration 0.15s;
+}
+
+.link:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
