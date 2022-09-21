@@ -1,9 +1,26 @@
+button {
+  color: rgba(255, 255, 255, 0.88)
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: rgb(24, 24, 24);
+}
+
+header,
+nav,
+main,
+footer {
+  border: none;
+  border-width: 2px;
+  border-color: white;
+}
+
+header {
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -34,4 +51,30 @@ p {
   color: dodgerblue;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.nav-div {
+  text-align: center;
+}
+
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.00);
+  border: none;
+  border-radius: 5%;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.15s;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 22px;
+  padding-right: 22px;
 }
