@@ -1,5 +1,9 @@
-button {
+ {
   color: rgba(255, 255, 255, 0.88)
+}
+
+html {
+  font-family: Roboto, Arial;
 }
 
 html {
@@ -10,21 +14,11 @@ body {
   background-color: rgb(24, 24, 24);
 }
 
-header,
-nav,
-main,
-footer {
-  border: none;
-  border-width: 2px;
-  border-color: white;
-}
-
-header {
+.header {
   margin-bottom: 10px;
 }
 
 h1 {
-  font-family: Roboto;
   font-size: 34px;
   color: rgba(255, 255, 255, 0.88);
   text-align: center;
@@ -33,7 +27,6 @@ h1 {
 }
 
 p {
-  font-family: Roboto;
   color: rgba(255, 255, 255, 0.5);
   margin: 0px
 }
