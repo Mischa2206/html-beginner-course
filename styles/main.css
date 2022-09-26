@@ -15,7 +15,10 @@ body {
 }
 
 .header {
-  margin-bottom: 10px;
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+  padding-top: 2px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -29,6 +32,10 @@ h1 {
 p {
   color: rgba(255, 255, 255, 0.5);
   margin: 0px
+}
+
+.page-author {
+  margin-bottom: 8px;
 }
 
 .author {
@@ -52,6 +59,7 @@ p {
 
 .nav-button {
   background-color: rgba(255, 255, 255, 0.00);
+  color: rgba(255, 255, 255, 0.88);
   border: none;
   border-radius: 5%;
   font-size: 14px;
@@ -70,4 +78,18 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   padding-left: 22px;
   padding-right: 22px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.heading{
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 10px;
 }
