@@ -26,20 +26,7 @@
       </p>
     <![endif]-->
     <header class="header">
-        <div class="page-title">
-          <h1>HTML Beginner Course</h1>
-        </div>
-        <div class="page-author">
-          <p class="author">by <a class="link">Mischa Börner</a></p>
-        </div>
-        <div class="nav-div">
-          <button class="nav-button" onclick="location.href='index.html'">Home</button>
-        <button class="nav-button">HTML</button>
-        <button class="nav-button">CSS</button>
-        <button class="nav-button">Git</button>
-        <button class="nav-button">PHP</button>
-        <button class="nav-button" onclick="location.href='impressum.html'">Contact</button>
-        </div>
+        <?php include('partials/header.php'); ?>
     </header>
     <main class="main">
       <div class="grid-container">
@@ -49,7 +36,7 @@
           </p>
         </div>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae cumque fugit delectus eveniet at cupiditate id asperiores sit, sunt totam quia et fugiat voluptates impedit accusamus, dicta distinctio? Possimus ab ducimus sequi ratione distinctio nam itaque praesentium at voluptas vitae, rerum, impedit dolores temporibus nesciunt corporis provident perferendis ullam aperiam illo. Excepturi ducimus dolore, deleniti vero quisquam eos nostrum cumque animi explicabo et eveniet numquam, odit enim minus voluptatum doloremque iure porro adipisci voluptas a! Impedit id sit quisquam totam sequi, hic ipsum iure modi placeat enim magnam consequuntur iste quos officiis et veritatis quidem! Nobis voluptatibus quasi accusantium corrupti aliquid iste nulla beatae. Corporis ab atque, rem natus esse facilis, cum vitae quam aut, enim veritatis minus iste harum! Sequi modi laboriosam sit. Repudiandae nulla illum consequatur dolor reprehenderit minus modi delectus architecto, dolorem iste beatae laboriosam autem odio voluptatibus repellendus, optio mollitia aspernatur. Cupiditate recusandae dignissimos voluptas ut quasi molestias quos suscipit voluptatibus quas modi tenetur, laborum, assumenda saepe minima, ex quod quidem distinctio esse veritatis! Officiis distinctio officia, alias accusantium cum quidem aperiam excepturi placeat ratione tenetur! Voluptas, eaque modi ab molestias voluptatibus, deleniti commodi libero quasi sapiente aut cumque iusto quis eum doloribus earum obcaecati?</p>
+          <p></p>
         </div>
       </div>
     </main>

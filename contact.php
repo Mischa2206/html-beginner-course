@@ -26,21 +26,7 @@
       </p>
     <![endif]-->
     <header class="header">
-      <div class="page-title">
-        <h1>HTML Beginner Course</h1>
-      </div>
-      <div class="page-author">
-        <p class="author">by <a class="link">Mischa Börner</a></p>
-      </div>
-      <div class="nav-div">
-        <button class="nav-button" onclick="location.href='index.html'">Introduction</button>
-        <button class="nav-button">Chapter 1</button>
-        <button class="nav-button">Chapter 2</button>
-        <button class="nav-button">Chapter 3</button>
-        <button class="nav-button">Chapter 4</button>
-        <button class="nav-button">Chapter 5</button>
-        <button class="nav-button" onclick="location.href='impressum.html'">Impressum</button>
-      </div>
+        <?php include('partials/header.php'); ?>
     </header>
       <main>
         <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Nokique Franzose <br> 
