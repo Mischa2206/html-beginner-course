@@ -33,13 +33,12 @@
           <p class="author">by <a class="link">Mischa Börner</a></p>
         </div>
         <div class="nav-div">
-          <button class="nav-button" onclick="location.href='index.html'">Introduction</button>
-        <button class="nav-button">Chapter 1</button>
-        <button class="nav-button">Chapter 2</button>
-        <button class="nav-button">Chapter 3</button>
-        <button class="nav-button">Chapter 4</button>
-        <button class="nav-button">Chapter 5</button>
-        <button class="nav-button" onclick="location.href='impressum.html'">Impressum</button>
+          <button class="nav-button" onclick="location.href='index.html'">Home</button>
+        <button class="nav-button">HTML</button>
+        <button class="nav-button">CSS</button>
+        <button class="nav-button">Git</button>
+        <button class="nav-button">PHP</button>
+        <button class="nav-button" onclick="location.href='impressum.html'">Contact</button>
         </div>
     </header>
     <main class="main">
