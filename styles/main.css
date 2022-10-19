@@ -9,9 +9,6 @@ p {
 
 html {
   font-family: Roboto, Arial;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -36,6 +33,17 @@ h1 {
 p {
   color: rgba(255, 255, 255, 0.5);
   margin: 0px
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 15px;
 }
 
 .page-author {
@@ -84,34 +92,36 @@ p {
   padding-right: 22px;
 }
 
+.nav-button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 33%;
+  margin-right: 33%;
 }
 
 .chapter{
-  margin-left: 10%;
-  margin-right: 10%;
   margin-bottom: 40px;
 }
 
 .heading {
-  font-size: 24px;
+  font-size: 24px; 
   color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 15px;
+  text-align: center;
 }
 
 .text {
   font-size: 14px;
   text-align: left;
   line-height: 1.3;
+  margin-bottom: 6px;
 }
 
 .code-example {
-  background-color: lightgrey;
+  background-color: rgba(211, 211, 211, 0.88);
   color: black;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -119,4 +129,6 @@ p {
   padding-right: 10px;
   border-radius: 4px;
   line-height: 1.8;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }

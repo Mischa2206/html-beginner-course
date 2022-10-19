@@ -33,55 +33,71 @@
         <p class="author">by <a class="link">Mischa Börner</a></p>
       </div>
       <div class="nav-div">
-        <button class="nav-button" onclick="location.href='index.php'">
-          Start
+        <button class="nav-button" onclick="location.href='#chapter01'">
+          Kapitel 1
         </button>
-        <button class="nav-button">HTML</button>
-        <button class="nav-button">CSS</button>
-        <button class="nav-button">Git</button>
-        <button class="nav-button">PHP</button>
-        <button class="nav-button" onclick="location.href='contact.php'">
-          Kontakt
+        <button class="nav-button" onclick="location.href='#chapter02'">
+          Kapitel 2
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter03'">
+          Kapitel 3
         </button>
       </div>
     </header>
     <main class="main">
       <div class="grid-container">
-        <div class="chapter" id="chapter00">
-          <p class="heading">Was ist eigentlich HTML?</p>
+        <div class="chapter" id="course-introduction">
+          <p class="heading">Was du in diesem Kurs lernen wirst <hr></p>
+        </div>
+        <div class="chapter" id="html-explanation">
+          <p class="heading">Was ist eigentlich HTML? <hr></p>
           <p class="text">
             HTML, Abkürzung für Hypertext Markup Language, ist eine textbasierte
-            Auszeichnungssprache zur Strukturierung von Webseiten. In diesem
-            Kurs wirst du die wichtigsten Grundlagen von HTML und CSS lernen und
-            zusätzlich noch kleine Einblicke in Git und PHP.
+            Auszeichnungssprache zur Strukturierung von Webseiten.
+          </p>
+          <p class="text">
+            In diesem Kurs wirst du die wichtigsten Grundlagen von HTML und CSS
+            lernen und zusätzlich noch kleine Einblicke in Git und PHP.
           </p>
         </div>
+        <div class="chapter" id="css-explanation">
+          <p class="heading">Und wofür ist dann CSS? <hr></p>
+        </div>
         <div class="chapter" id="chapter01">
-          <p class="heading">Kapitel 1: Dein erster Code</p>
+          <p class="heading">Kapitel 1: Dein erster Code <hr></p>
           <p class="text">
             In diesem Kapitel widmen wir uns der Erstellung eines Textes, oder
-            wie man in HTML sagt einem paragraph. <br />
+            wie man in HTML sagt einem paragraph.
+          </p>
+          <p class="text">
             Bevor wir damit allerdings beginnen können musst du ein neues
             Projekt erstellen, dies macht man indem man z.B. auf dem Desktop
             einen neuen Ordner erstellt und dann in diesem Ordner eine Datei
-            namens &quot;index.html&quot; (Der Name des Ordners und der Datei
-            ist beliebig wählbar, wichtig ist nur die .html Endung)
-            <br />
+            namens &quot;index.html&quot; hinzufügt (Der Name des Ordners und
+            der Datei ist beliebig wählbar, wichtig ist nur die .html Endung).
+          </p>
+          <p class="text">
             Jetzt muss man Visual Studio Code starten, oben links auf File
             drücken, danach auf Open Folder und danach dann einfach den eben
             erstellten Ordner auswählen.
-            <br />
+          </p>
+          <p class="text">
             Da nun alle Vorbereitungen abgeschlossen sind können wir mit dem
             ersten Code anfangen.
-            <br />
-            Einen paragraph erstellst du wie folgt:
-            <br />
-            <span class="code-example"> &lt;p&gt; Hallo Welt! &lt;/p&gt; </span>
-            <br />
+          </p>
+          <p class="text">Einen paragraph erstellst du wie folgt:</p>
+          <p class="text code-example">&lt;p&gt; Hallo Welt! &lt;/p&gt;</p>
+          <p class="text">
             Wie du siehst befindet sich unser &quot;Hallo Welt!&quot; Text
             zwischen zwei p in größer und kleiner als Zeichen, diese bezeichnet
             mal als ein HTML-Element.
           </p>
+        </div>
+        <div class="chapter" id="chapter02">
+          <p class="heading">Kapitel 2: Mehr HTML Elemente <hr></p>
+        </div>
+        <div class="chapter" id="chapter03">
+          <p class="heading">Kapitel 3: Die richtige Webseitenstruktur<hr></p>
         </div>
       </div>
     </main>
