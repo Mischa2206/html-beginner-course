@@ -3,23 +3,8 @@
   margin: 0;
 }
 
-p {
-  color: rgba(255, 255, 255, 0.88)
-}
-
-html {
-  font-family: Roboto, Arial;
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: rgb(24, 24, 24);
-}
-
-.header {
-  background-color: rgb(32, 32, 32);
-  padding: 15px;
-  margin-bottom: 30px;
 }
 
 h1 {
@@ -28,11 +13,6 @@ h1 {
   text-align: center;
   margin: 0px;
   margin-top: 10px;
-}
-
-p {
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0px
 }
 
 hr {
@@ -46,16 +26,64 @@ hr {
   margin-bottom: 15px;
 }
 
-.page-author {
-  margin-bottom: 8px;
+html {
+  font-family: Roboto, Arial;
+  scroll-behavior: smooth;
 }
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0px
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 .author {
   text-align: center;
   margin-top: 5px;
 }
 
+.chapter{
+  margin-bottom: 40px;
+}
+
+.code-example {
+  background-color: rgba(211, 211, 211, 0.88);
+  color: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  line-height: 1.8;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.header {
+  background-color: rgb(32, 32, 32);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 24px; 
+  color: rgba(255, 255, 255, 0.88);
+  text-align: center;
+}
+
 .link {
+  color: dodgerblue;
+  text-decoration: none;
   transition: color 0.15s, text-decoration 0.15s;
 }
 
@@ -63,10 +91,6 @@ hr {
   color: dodgerblue;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.nav-div {
-  text-align: center;
 }
 
 .nav-button {
@@ -96,21 +120,12 @@ hr {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 33%;
-  margin-right: 33%;
-}
-
-.chapter{
-  margin-bottom: 40px;
-}
-
-.heading {
-  font-size: 24px; 
-  color: rgba(255, 255, 255, 0.88);
+.nav-div {
   text-align: center;
+}
+
+.page-author {
+  margin-bottom: 8px;
 }
 
 .text {
@@ -118,17 +133,4 @@ hr {
   text-align: left;
   line-height: 1.3;
   margin-bottom: 6px;
-}
-
-.code-example {
-  background-color: rgba(211, 211, 211, 0.88);
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 4px;
-  line-height: 1.8;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }

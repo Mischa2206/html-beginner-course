@@ -27,10 +27,10 @@
     <![endif]-->
     <header class="header">
       <div class="page-title">
-        <h1>HTML Beginner Course</h1>
+        <h1>HTML &amp; CSS Anfänger Kurs</h1>
       </div>
       <div class="page-author">
-        <p class="author">by <a class="link">Mischa Börner</a></p>
+        <p class="author">von Mischa Börner</p>
       </div>
       <div class="nav-div">
         <button class="nav-button" onclick="location.href='#chapter01'">
@@ -49,6 +49,9 @@
         <!-- Kurseinführung  -->
         <div class="chapter" id="course-introduction">
           <p class="heading">Was du in diesem Kurs lernen wirst <hr></p>
+          <p class="text">In diesem Kurs wirst du die Grundlagen von HTML und CSS lernen, sodass du am Ende eine eigene simple Webseite erstellen kannst</p>
+          <p class="text">HTML und CSS werden dabei gleichzeitig in den ersten X Kapiteln erklärt und danach erkläre ich ein paar spezifischere Sachen, für die man dann teilweise auch noch zusätzliche Sprachen benötigt, wie zum Beispiel Java Script oder PHP.</p>
+          <p class="text">Außerdem erfährst du in Kapitel X, was Git ist, wozu man es gut benutzen kann und wie man dieses einrichtet.</p>
         </div>
         <!-- HTML Erklärung -->
         <div class="chapter" id="html-explanation">
@@ -66,16 +69,28 @@
         <div class="chapter" id="css-explanation">
           <p class="heading">Und wofür ist dann CSS? <hr></p>
         </div>
+        <!-- Was du brauchst -->
+        <div class="chapter">
+          <p class="heading">Was du brauchst <hr></p>
+          <p class="text">
+            Eigentlich brauchst du zum Programmieren deiner ersten Website lediglich <a class="link" href='https://code.visualstudio.com/download' target="_blank">Visual Studio Code</a>, aber um es etwas angenehmer zu machen würde ich dir zumindest 2 zusätzliche Addons empfehlen (wie du diese installierst lernst du <a class="link" href="https://www.youtube.com/watch?v=snHRbMp77Bg" target="_blank">hier</a>)
+          </p>
+          <p class="text">
+            Live Server ist das erste Addon, es aktualisiert deine Webseite automatisch, sodass du nicht immer manuell auf Aktualisieren drücken musst.
+          </p>
+          <p class="text">Als zweites Addon würde ich Prettier empfehlen, dieses formatiert deinen Code automatisch, damit dieser immer schön und übersichtlich aussieht.</p>
+          <p class="text">Das wird vor allem wichtig, falls du irgendwann mal mit mehreren Leuten zusammenarbeitest, da man so keine Probleme mit verschiedenen Formatierungspräferenzen bekommt.</p>
+        </div>
         <!-- Kapitel 1 -->
         <div class="chapter" id="chapter01">
           <p class="heading">Kapitel 1: Dein erster Code <hr></p>
           <p class="text">
             In diesem Kapitel widmen wir uns der Erstellung eines Textes, oder
-            wie man in HTML sagt einem paragraph.
+            wie man in HTML sagt, einem Paragraph.
           </p>
           <p class="text">
-            Bevor wir damit allerdings beginnen können musst du ein neues
-            Projekt erstellen, dies macht man indem man z.B. auf dem Desktop
+            Bevor wir damit allerdings beginnen können, musst du ein neues
+            Projekt erstellen, dies macht man, indem man z.B. auf dem Desktop
             einen neuen Ordner erstellt und dann in diesem Ordner eine Datei
             namens &quot;index.html&quot; hinzufügt (Der Name des Ordners und
             der Datei ist beliebig wählbar, wichtig ist nur die .html Endung).
@@ -89,7 +104,7 @@
             Da nun alle Vorbereitungen abgeschlossen sind können wir mit dem
             ersten Code anfangen.
           </p>
-          <p class="text">Einen paragraph erstellst du wie folgt:</p>
+          <p class="text">Einen Paragraph erstellst du wie folgt:</p>
           <p class="text code-example">&lt;p&gt; Hallo Welt! &lt;/p&gt;</p>
           <p class="text">
             Wie du siehst befindet sich unser &quot;Hallo Welt!&quot; Text
