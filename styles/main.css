@@ -78,7 +78,7 @@ p {
 .heading {
   font-size: 24px; 
   color: rgba(255, 255, 255, 0.88);
-  text-align: center;
+  text-align: left;
 }
 
 .link {

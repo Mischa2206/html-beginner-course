@@ -63,20 +63,17 @@
             HTML, Abkürzung für Hypertext Markup Language, ist eine textbasierte
             Auszeichnungssprache zur Strukturierung von Webseiten.
           </p>
-          <p class="text">
-            In diesem Kurs wirst du die wichtigsten Grundlagen von HTML und CSS
-            lernen und zusätzlich noch kleine Einblicke in Git und PHP.
-          </p>
         </div>
         <!-- CSS Erklärung -->
         <div class="chapter" id="css-explanation">
           <p class="heading">Und wofür ist dann CSS? <hr></p>
+          <p class="text">CSS steht für Cascading Style Sheet und dient zur optischen Gestaltung von Webseiten.</p>
         </div>
         <!-- Was du brauchst -->
         <div class="chapter">
           <p class="heading">Was du brauchst <hr></p>
           <p class="text">
-            Eigentlich brauchst du zum Programmieren deiner ersten Website lediglich <a class="link" href='https://code.visualstudio.com/download' target="_blank">Visual Studio Code</a>, aber um es etwas angenehmer zu machen würde ich dir zumindest 2 zusätzliche Addons empfehlen (wie du diese installierst lernst du <a class="link" href="https://www.youtube.com/watch?v=snHRbMp77Bg" target="_blank">hier</a>)
+            Eigentlich brauchst du zum Programmieren deiner ersten Website lediglich <a class="link" href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>, aber um es etwas angenehmer zu machen würde ich dir zumindest 2 zusätzliche Addons empfehlen (wie du diese installierst lernst du <a class="link" href="https://www.youtube.com/watch?v=snHRbMp77Bg" target="_blank">hier</a>)
           </p>
           <p class="text">
             Live Server ist das erste Addon, es aktualisiert deine Webseite automatisch, sodass du nicht immer manuell auf Aktualisieren drücken musst.
@@ -114,14 +111,34 @@
             zwischen zwei p in größer und kleiner als Zeichen, diese bezeichnet
             mal als ein HTML-Element.
           </p>
+          <p class="text">Die meisten Elemente in HTML bestehen aus zwei Teilen, einem Öffnungsteil - &lt;p&gt; - und einem Schließungsteil - &lt;/p&gt;.</p>
         </div>
         <!-- Kapitel 2 -->
         <div class="chapter" id="chapter02">
           <p class="heading">Kapitel 2: Mehr HTML Elemente <hr></p>
+          <p class="text">Nachdem du im letzten Kapitel gelernt hast, wie man Text in Form eines paragraph erstellen kannst wirst du jetzt noch drei weitere HTML Elemente kennenlernen:</p>
+          <p class="text">button, a und img</p>
+          <p class="text">Als erstes zeige ich dir jetzt wie man einen button, also einen Knopf erstellen kann, das geht nämlich so:</p>
+          <p class="text code-example">&lt;button&gt;Drück mich&lt;/button&gt;</p>
+          <p class="text">Der Aufbau eines buttons ist also fast identisch mit dem eines paragraphs, dass man anstelle eines p, button in die größer und kleiner als Zeichen schreibt.</p>
+          <p class="text">Einen a, also einen Link, kann man so erstellen:</p>
+          <p class="text code-example">&lt;a href=&quot;https://www.google.com/&quot; target=&quot;_blank&quot;&gt;Link zu Google&lt;/a&gt;</p>
+          <p class="text">Wie du siehst, gibt es hier ein paar Neuheiten, hinter a stehen nämlich noch zwei sogenannte Attribute, und zwar href und target.</p>
+          <p class="text">Hinter href schreibt man die Zieladresse, auf welche der Link verweisen soll, wenn man diesen anklickt.</p>
+          <p class="text">Target ist dazu da, festzulegen wo der Link geöffnet werden soll, bei _blank wird er zum Beispiel in einem neuen Tab geöffnet.</p>
+          <p class="text">Als letztes wollen wir uns jetzt noch das img Element anschauen, mit diesem kann man ein Bild einfügen und das funktioniert wie folgt:</p>
+          <p class="text code-example">&lt;img src=&quot; https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png&quot; alt=&quot;Bild konnte nicht geladen werden&quot;&gt;</p>
+          <p class="text">Hier siehst du schon wieder zwei neue Attribute, src und alt.</p>
+          <p class="text">Bei dem src Attribut gibst du die Quelle des Bilds an, welches du anzeigen lassen möchtest.</p>
+          <p class="text">Das alt Attribut dient dazu einen beliebigen Text anzuzeigen, falls das Bild nicht geladen werden kann.</p>
         </div>
         <!-- Kapitel 3 -->
         <div class="chapter" id="chapter03">
-          <p class="heading">Kapitel 3: Die richtige Webseitenstruktur<hr></p>
+          <p class="heading">Kapitel 3: Klassen <hr></p>
+        </div>
+        <!-- Kapitel 4 -->
+        <div class="chapter" id="chapter04">
+          <p class="heading">Kapitel 4: Die richtige Webseitenstruktur<hr></p>
         </div>
       </div>
     </main>
