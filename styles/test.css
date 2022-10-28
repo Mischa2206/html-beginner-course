@@ -1,0 +1,11 @@
+
+.button-blue {
+  color: white;
+  background-color: blue;
+  border: none;
+  width: 150px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px black;
+  cursor: pointer;
+}
