@@ -81,7 +81,7 @@
           <p class="text">Als zweites Addon würde ich Prettier empfehlen, dieses formatiert deinen Code automatisch, damit dieser immer schön und übersichtlich aussieht.</p>
           <p class="text">Das wird vor allem wichtig, falls du irgendwann mal mit mehreren Leuten zusammenarbeitest, da man so keine Probleme mit verschiedenen Formatierungspräferenzen bekommt.</p>
         </div>
-        <!-- Kapitel 1 -->
+        <!-- Kapitel 1: Dein erster Code -->
         <div class="chapter" id="chapter01">
           <p class="heading">Kapitel 1: Dein erster Code <hr></p>
           <p class="text">
@@ -113,7 +113,7 @@
           </p>
           <p class="text">Die meisten Elemente in HTML bestehen aus zwei Teilen, einem Öffnungsteil - &lt;p&gt; - und einem Schließungsteil - &lt;/p&gt;.</p>
         </div>
-        <!-- Kapitel 2 -->
+        <!-- Kapitel 2: Mehr HTML Elemente -->
         <div class="chapter" id="chapter02">
           <p class="heading">Kapitel 2: Mehr HTML Elemente <hr></p>
           <p class="text">Nachdem du im letzten Kapitel gelernt hast, wie man Text in Form eines paragraph erstellen kannst wirst du jetzt noch drei weitere HTML Elemente kennenlernen:</p>
@@ -132,13 +132,106 @@
           <p class="text">Bei dem src Attribut gibst du die Quelle des Bilds an, welches du anzeigen lassen möchtest.</p>
           <p class="text">Das alt Attribut dient dazu einen beliebigen Text anzuzeigen, falls das Bild nicht geladen werden kann.</p>
         </div>
-        <!-- Kapitel 3 -->
+        <!-- Kapitel 3: Die richtige Webseitenstruktur -->
         <div class="chapter" id="chapter03">
-          <p class="heading">Kapitel 3: Klassen <hr></p>
+          <p class="heading">Kapitel 3: Die richtige Webseitenstruktur <hr></p>
+          <p class="text">Jetzt werden wir uns mit der richtigen Webseitenstruktur befassen, damit dein Code übersichtlicher wird und du ein paar nützliche Features zu nutzen machen kannst.</p>
+          <p class="text">Zum Beispiel kann sich unsere Webseite dann von allein nach Änderungen am Code aktualisieren, falls wir das Live Server Addon installiert haben, oder man kann ein CSS Stylesheet verlinken, worauf wir dann aber im nächsten Kapitel eingehen werden.</p>
+          <p class="text">Das schöne ist, dass du dir das Webseitengrundgerüst in Visual Studio Code ganz automatisch erstellen lassen kannst, indem du in einem leeren html Dokument einfach ein Ausrufezeichen (!) eintippst und danach mit Tab oder Enter vervollständigst, das ganze sollte dann so aussehen:</p>
+          <p class="text code-example">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html lang=&quot;en&quot;&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+          </p>
+          <p class="text">Vorerst interessieren uns hier allerdings nur head, title und body.</p>
+          <p class="text">Im head befinden sich die Metadaten, die Informationen zur Seite liefern, die Darstellung steuern und über die Beziehungen zu anderen Dateien und HTML-Seiten informieren.</p>
+          <p class="text">Der body ist der sichtbare Bereich der Webseite, auf der Webseite wird nur angezeigt, was sich innerhalb des body Elements befindet.</p>
+          <p class="text">Mit dem title Element legt man den Namen der Webseite fest, welcher dann in den Tabs angezeigt wird.</p>
         </div>
-        <!-- Kapitel 4 -->
+        <!-- Kapitel 4: Wie und wofür erstellt man Klassen -->
         <div class="chapter" id="chapter04">
-          <p class="heading">Kapitel 4: Die richtige Webseitenstruktur<hr></p>
+          <p class="heading">Kapitel 4: Wie und wofür erstellt man Klassen?<hr></p>
+          <p class="text">Mit Hilfe von Klassen kann man CSS auf HTML Elemente anwenden und diese damit optisch anpassen, um eine schöne und interessante Webseite zu gestalten. Zusätzlich haben Klassen den Vorteil, dass man diese auf mehrere Elemente anwenden kann.</p>
+          <p class="text">Aber wie erstellt man denn jetzt Klassen?</p>
+          <p class="text">Bevor wir eine Klasse erstellen müssen wir unserem Projektverzeichnis noch eine neue Datei hinzufügen, die wir jetzt einfach mal &quot;main.css&quot; nennen, auch hier kannst du der Datei wieder einen beliebigen Namen geben, solange die Endung .css ist.</p>
+          <p class="text">Jetzt wo die CSS Datei erstellt ist, musst du diese noch mit deiner .html Datei verknüpfen, das geht, indem du folgenden Code einfach in deinen head einfügst:</p>
+          <p class="text code-example">&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot; /&gt;</p>
+          <p class="text">Falls du einen anderen Namen als main.css gewählt hast kannst du einfach diesen angeben.</p>
+          <p class="text">Wie du siehst, bezeichnet man die Datei, welche du gerade eben erstellt hast als Stylesheet. Da jetzt main.css und index.html verknüpft sind kannst du deine erste Klasse erstellen, als Beispiel werden wir jetzt einen button um stylen und das geht in dem du diesen Code in dein Stylesheet kopiert:</p>
+          <p class="text code-example">.button-blue {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color:blue;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;border: none; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;width: 150px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 60px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 8px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0px 2px 5px black;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;<br>
+            }
+          </p>
+          <p class="text">Da man hier jetzt wieder einige unbekannte Sachen sieht werde ich diese jetzt nacheinander erklären.</p>
+          <p class="text">.button-blue ist ein sogenannter Klassenselektor, dieser spricht alle Elemente der Klasse &quot;button-blue&quot; an. Man kann Klassenselektoren in der CSS Datei daran erkennen, dass diese einen Punkt vor dem Namen haben.<br> 
+            Es gibt aber noch drei weitere Typen von Selektoren, und zwar den Universalselektor, Typselektoren und ID-Selektoren.<br>
+            Der Universalselektor besteht aus einem Stern (*) und spricht jedes Element an.<br>
+            Der Typselektor spricht alle Elemente eines Typen an, ein Beispiel wäre p oder button.<br>
+            ID-Selektoren sprechen Elemente mit einer bestimmten ID an, das sähe dann so aus: #beispielid
+          </p>
+          <p class="text">Die erste CSS Eigenschaft die wir uns jetzt ansehen ist color, mit dieser kann man die Textfarbe bestimmen, in unserem Fall ist die jetzt weiß.</p>
+          <p class="text">Als nächstes kommt background-color, mit dieser kann man die Hintergrundfarbe, also hier die Farbe des Knopfes, zum Beispiel zu blau ändern.</p>
+          <p class="text">Mit border kann man den Rahmen des Elements anpassen, hier haben wir den Wert aber einfach auf &quot;none&quot; gesetzt.</p>
+          <p class="text">Mit width und height kann man die Breite und die Höhe des Elements festlegen.</p>
+          <p class="text">Border-radius ist dafür da, um die Kanten eines Elements abzurunden.</p>
+          <p class="text">Durch box-shadow kann man einen Schatten unter dem Element erzeugen, die ersten beiden Werte (0px und 2px) sind dafür da, um die Verschiebung auf der X und Y Achse anzugeben.<br> Der dritte Wert (5px) passt die Verschwommenheit des Schattens an, je höher der Wert, desto verschwommener ist er.<br> Der letzte Wert (black) legt die Farbe des Schattens fest.</p>
+          <p class="text">Mit cursor legt man die Cursorart fest, wenn der Mauszeiger sich auf dem Element befindet.</p>
+          <p class="text">Jetzt hast du zwar schon ein Stylesheet erstellt, dieses mit deiner HTML Datei verknüpft und deine erste Klasse erstellt, aber nun muss diese noch auf ein Element angewendet werden und das geht so:</p>
+          <p class="text code-example">&lt;button class=&quot;button-blue&quot;&gt;button mit Klasse&lt;/button&gt;</p>
+          <p class="text">Wie du siest kann man eine Klasse ganz einfach anwenden in dem man class=&quot;Klassenname&quot; hinter dem Element ergänzt.</p>
+        </div>
+        <!-- Kapitel 5: Strukturelemente -->
+        <div class="chapter" id="chapter05">
+          <p class="heading">Kapitel 5: Strukturelemente<hr></p>
+          <p class="text">In HTML gibt es sogenannte Strukturelemente, diese sind dafür da, um die Webseite in bestimmte Bereiche zu unterteilen und gleichzeitig den Code übersichtlicher zu gestalten.</p>
+          <p class="text">In diesem Kapitel werden wir folgende Strukturelemente kennenlernen: header, main und footer.</p>
+          <p class="text">Der header wird dafür verwendet, um die Kopfzeile der Webseite darzustellen.</p>
+          <p class="text">Im main Bereich befinden sich alle Informationen, Texte, usw. der Webseite.</p>
+          <p class="text">Der footer kann als Fußzeile der Webseite verwendet werden.</p>
+          <p class="text">Wenn man diese drei Strukturelemente dann anwendet, könnte das zum Beispiel so aussehen:</p>
+          <p class="text code-example">
+            &lt;header&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Kopfzeile&lt;/h1&gt;<br>
+            &lt;/header&gt;<br>
+            &lt;main&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Text&lt;/p&gt;<br>
+            &lt;/main&gt;<br>
+            &lt;footer&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Fußzeile&lt;/p&gt;<br>
+            &lt;/footer&gt;
+          </p>
+        </div>
+        <!-- Kapitel 6: Das CSS Box Model -->
+        <div class="chapter" id="chapter06">
+          <p class="heading">Kapitel 6: Das CSS Box Model<hr></p>
+        </div>
+        <!-- Kapitel 7: Hover, Active und Transitions -->
+        <div class="chapter" id="chapter07">
+          <p class="heading">Kapitel 7: Hover, Active und Transitions<hr></p>
+        </div>
+        <!-- Kapitel 8: Das wichtigste HTML Element -->
+        <div class="chapter" id="chapter08">
+          <p class="heading">Kapitel 8: Das wichtigste HTML Element<hr></p>
+        </div>
+        <!-- Kapitel 9: CSS Grid -->
+        <div class="chapter" id="chapter09">
+          <p class="heading">Kapitel 9: CSS Grid<hr></p>
         </div>
       </div>
     </main>
