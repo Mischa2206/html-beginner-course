@@ -8,4 +8,13 @@
   border-radius: 8px;
   box-shadow: 0px 2px 5px black;
   cursor: pointer;
+  transition: 0.15s;;
+}
+
+.button-blue:hover {
+  background-color: red;
+}
+
+.button-blue:active {
+  width: 200px;
 }

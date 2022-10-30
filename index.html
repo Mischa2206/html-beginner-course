@@ -220,10 +220,41 @@
         <!-- Kapitel 6: Das CSS Box Model -->
         <div class="chapter" id="chapter06">
           <p class="heading">Kapitel 6: Das CSS Box Model<hr></p>
+          <p class="text">Das Box Modell ist eine Box, welche sich um jedes HTML Element wickelt.<br> Es besteht aus: content, padding, border und margin.</p>
+          <p class="text">Der Content ist der Inhalt des HTML Elements, man kann seine Größe mit width und height verändern.</p>
+          <p class="text">Padding ist der Abstand des Contents zur Border, man kann ihn mit der CSS Eigenschaft padding bestimmen.</p>
+          <p class="text">Die Border ist der Rahmen des HTML Elements, man kann ihn mit der border Eigenschaft stylen.</p>
+          <p class="text">Margin ist der Abstand von der Border zum nächsten HTML Element, man kann die Größe mit margin bestimmen.</p>
         </div>
-        <!-- Kapitel 7: Hover, Active und Transitions -->
+        <!-- Kapitel 7: Hover und Active-->
         <div class="chapter" id="chapter07">
-          <p class="heading">Kapitel 7: Hover, Active und Transitions<hr></p>
+          <p class="heading">Kapitel 7: Hover und Active<hr></p>
+          <p class="text">Mit hover und active kann man in CSS bestimmte Eigenschaften auf ein Element anwenden, wenn man mit dem Mauszeiger draufzeigt (hover) oder dieses drückt (active).</p>
+          <p class="text">Hier ein Codebeispiel wo hover und active auf die button-blue Klasse aus Kapitel 4 angewandt sind:</p>
+          <p class="text code-example">
+            .button-blue {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color:blue;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;border: none; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;width: 150px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 60px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 8px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0px 2px 5px black;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;transition: 0.15s;<br>
+            }<br>
+            <br>
+            .button-blue:hover {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color: red;<br>
+            }<br>
+            <br>
+            .button-blue:active {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;width:200px;<br>
+            }
+          </p>
+          <p class="text">Wie du siehst, kann man die CSS Eigenschaften für den Hover und Active Zustand einfach festlegen in dem man :hover oder :active hinter der Klasse ergänzt.</p>
+          <p class="text">Wenn man jetzt mit der Maus auf den Knopf zeigt, verändert sich seine Farbe auf rot und wenn man dann noch drückt, wird seine Breite auf 200 Pixel geändert.</p>
+          <p class="text">Die transition Eigenschaft sorgt dafür, dass ein kleiner Übergang beim Ändern der Werte entsteht.</p>
         </div>
         <!-- Kapitel 8: Das wichtigste HTML Element -->
         <div class="chapter" id="chapter08">
