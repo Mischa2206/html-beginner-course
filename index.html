@@ -34,7 +34,7 @@
       <div class="page-author">
         <p class="author">von Mischa Börner</p>
       </div>
-      <!-- Navigationleiste -->
+      <!-- Navigation -->
       <div class="nav-div">
         <button class="nav-button" onclick="location.href='#chapter01'">
           Kapitel 1
@@ -44,6 +44,24 @@
         </button>
         <button class="nav-button" onclick="location.href='#chapter03'">
           Kapitel 3
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter04'">
+          Kapitel 4
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter05'">
+          Kapitel 5
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter06'">
+          Kapitel 6
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter07'">
+          Kapitel 7
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter08'">
+          Kapitel 8
+        </button>
+        <button class="nav-button" onclick="location.href='#chapter09'">
+          Kapitel 9
         </button>
       </div>
     </header>
@@ -281,6 +299,28 @@
         <!-- Kapitel 9: CSS Grid -->
         <div class="chapter" id="chapter09">
           <p class="heading">Kapitel 9: CSS Grid<hr></p>
+          <p class="text">Das CSS Grid bietet die Möglichkeit, mehrere Divs nach einem von dir vorgegebenen Muster anzuordnen.</p>
+          <p class="text">Funktionieren tut das Ganze so:</p>
+          <p class="text code-example">
+            &lt;div class:&quot;grid-container&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;background-color: lightblue; height: 300px;&quot;&gt;600px&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;background-color: lightpink; height: 300px;&quot;&gt;1fr&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;background-color: lightblue; height: 300px;&quot;&gt; 2fr&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;background-color: lightblue; height: 300px;&quot;&gt;600px&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;background-color: lightpink; height: 300px;&quot;&gt;1fr&lt;/div&gt;<br>
+            &lt;/div&gt;
+          </p>
+          <p class="text code-example">
+            .grid-container {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 600px 1fr 2fr;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;column-gap: 20px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;row-gap: 20px;<br>
+            }
+          </p>
+          <p class="text">Wie du siehst, gibt es hier wieder einige neue Sachen, zum Beispiel haben die Divs innerhalb des Grid Containers keine Klassen, das ist aber lediglich eine andere Möglichkeit Elemente zu stylen, die ich dir hier zeigen wollte.</p>
+          <p class="text">Eine andere neue Sache wäre aber der Displaytyp Grid. Dieser legt fest, dass die Elemente in einem Gitter, mit einem festgelegten Muster, angeordnet werden sollen.<br> Und dieses Muster legt man mit grid-template-columns fest. In unserem Fall nimmt die erste Spalte 600 Pixel ein, die zweite ein drittel des restlichen Platzes und die dritte zwei drittel des restlichen Platzes. Man kann beliebig viele Werte eintragen und das Grid fügt dann einfach dementsprechend viele Spalten hinzu.</p>
+          <p class="text">Als nächstes kommen column-gap und row-gap, diese geben den Spalten- und Zeilenabstand an.</p>
         </div>
       </div>
     </main>
