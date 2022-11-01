@@ -18,3 +18,7 @@
 .button-blue:active {
   width: 200px;
 }
+
+.example {
+  display: inline-block;
+}

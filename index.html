@@ -256,9 +256,27 @@
           <p class="text">Wenn man jetzt mit der Maus auf den Knopf zeigt, verändert sich seine Farbe auf rot und wenn man dann noch drückt, wird seine Breite auf 200 Pixel geändert.</p>
           <p class="text">Die transition Eigenschaft sorgt dafür, dass ein kleiner Übergang beim Ändern der Werte entsteht.</p>
         </div>
-        <!-- Kapitel 8: Das wichtigste HTML Element -->
+        <!-- Kapitel 8: Das div Element -->
         <div class="chapter" id="chapter08">
-          <p class="heading">Kapitel 8: Das wichtigste HTML Element<hr></p>
+          <p class="heading">Kapitel 8: Das div Element<hr></p>
+          <p class="text">Das div Element ist eine Box, um andere Elemente aufzubewahren, mit welcher man dann seine komplette Webseite strukturieren kann.<br> Deshalb wird es auch als eines der wichtigsten HTML Elemente bezeichnet.</p>
+          <p class="text">Wir werden und das div Element jetzt anhand eines Code Beispiels etwas genauer ansehen:</p>
+          <p class="text code-example">
+            &lt;div&gt;div 1&lt;/div&gt;<br>
+            &lt;div&gt;div 2&lt;/div&gt;
+          </p>
+          <p class="text">Wie man sieht, kann man eine div ganz einfach erstellen und innerhalb einer div kann man dann beliebig viele andere Elemente, wie zum Beispiel p, a oder button verwenden.</p>
+          <p class="text">Bei dem oben gezeigten Beispiel sind die beiden divs jedoch noch in zwei verschiedenen Zeilen, wenn man das ändern möchte, sodass sich diese nebeneinander befinden, kann man den Code mithilfe einer Klasse wie folgt verändern:</p>
+          <p class="text code-example">
+            &lt;div class=&quot;example&quot;&gt;div 1&lt;/div&gt;<br>
+            &lt;div class=&quot;example&quot;&gt;div 2&lt;/div&gt;
+          </p>
+          <p class="text code-example">
+            .example {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;<br>
+            }
+          </p>
+          <p class="text">Jetzt sollten sich die beiden divs in einer Zeile befinden, da wir den Displaytyp zu inline-block geändert haben, was dafür sorgt, dass die div nur so viel Platz einnimmt, wie sie benötigt.<br> Der Standarddisplaytyp einer div ist block und sorgt dafür, dass ein Element immer eine ganze Zeile einnimmt.</p>
         </div>
         <!-- Kapitel 9: CSS Grid -->
         <div class="chapter" id="chapter09">
