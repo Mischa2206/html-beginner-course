@@ -36,6 +36,9 @@
       </div>
       <!-- Navigation -->
       <div class="nav-div">
+        <button class="nav-button" onclick="location.href='#course-introduction'">
+          Einführung
+        </button>
         <button class="nav-button" onclick="location.href='#chapter01'">
           Kapitel 1
         </button>
@@ -68,7 +71,8 @@
     <main class="main">
       <div class="grid-container">
         <!-- Kurseinführung  -->
-        <div class="chapter" id="course-introduction">
+        <div class="chapter">
+          <div class="jump" id="course-introduction"></div>
           <p class="heading">Was du in diesem Kurs lernen wirst<hr></p>
           <p class="text">In diesem Kurs wirst du die Grundlagen von HTML und CSS lernen, sodass du am Ende eine eigene simple Webseite erstellen kannst</p>
           <p class="text">HTML und CSS werden dabei gleichzeitig in den ersten X Kapiteln erklärt und danach erkläre ich ein paar spezifischere Sachen, für die man dann teilweise auch noch zusätzliche Sprachen benötigt, wie zum Beispiel Java Script oder PHP.</p>
@@ -100,7 +104,8 @@
           <p class="text">Das wird vor allem wichtig, falls du irgendwann mal mit mehreren Leuten zusammenarbeitest, da man so keine Probleme mit verschiedenen Formatierungspräferenzen bekommt.</p>
         </div>
         <!-- Kapitel 1: Dein erster Code -->
-        <div class="chapter" id="chapter01">
+        <div class="chapter">
+          <div class="jump" id="chapter01"></div>
           <p class="heading">Kapitel 1: Dein erster Code <hr></p>
           <p class="text">
             In diesem Kapitel widmen wir uns der Erstellung eines Textes, oder
@@ -132,7 +137,8 @@
           <p class="text">Die meisten Elemente in HTML bestehen aus zwei Teilen, einem Öffnungsteil - &lt;p&gt; - und einem Schließungsteil - &lt;/p&gt;.</p>
         </div>
         <!-- Kapitel 2: Mehr HTML Elemente -->
-        <div class="chapter" id="chapter02">
+        <div class="chapter">
+          <div class="jump" id="chapter02"></div>
           <p class="heading">Kapitel 2: Mehr HTML Elemente <hr></p>
           <p class="text">Nachdem du im letzten Kapitel gelernt hast, wie man Text in Form eines paragraph erstellen kannst wirst du jetzt noch drei weitere HTML Elemente kennenlernen:</p>
           <p class="text">button, a und img</p>
@@ -151,7 +157,8 @@
           <p class="text">Das alt Attribut dient dazu einen beliebigen Text anzuzeigen, falls das Bild nicht geladen werden kann.</p>
         </div>
         <!-- Kapitel 3: Die richtige Webseitenstruktur -->
-        <div class="chapter" id="chapter03">
+        <div class="chapter">
+          <div class="jump" id="chapter03"></div>
           <p class="heading">Kapitel 3: Die richtige Webseitenstruktur <hr></p>
           <p class="text">Jetzt werden wir uns mit der richtigen Webseitenstruktur befassen, damit dein Code übersichtlicher wird und du ein paar nützliche Features zu nutzen machen kannst.</p>
           <p class="text">Zum Beispiel kann sich unsere Webseite dann von allein nach Änderungen am Code aktualisieren, falls wir das Live Server Addon installiert haben, oder man kann ein CSS Stylesheet verlinken, worauf wir dann aber im nächsten Kapitel eingehen werden.</p>
@@ -176,7 +183,8 @@
           <p class="text">Mit dem title Element legt man den Namen der Webseite fest, welcher dann in den Tabs angezeigt wird.</p>
         </div>
         <!-- Kapitel 4: Wie und wofür erstellt man Klassen -->
-        <div class="chapter" id="chapter04">
+        <div class="chapter">
+          <div class="jump" id="chapter04"></div>
           <p class="heading">Kapitel 4: Wie und wofür erstellt man Klassen?<hr></p>
           <p class="text">Mit Hilfe von Klassen kann man CSS auf HTML Elemente anwenden und diese damit optisch anpassen, um eine schöne und interessante Webseite zu gestalten. Zusätzlich haben Klassen den Vorteil, dass man diese auf mehrere Elemente anwenden kann.</p>
           <p class="text">Aber wie erstellt man denn jetzt Klassen?</p>
@@ -215,7 +223,8 @@
           <p class="text">Wie du siest kann man eine Klasse ganz einfach anwenden in dem man class=&quot;Klassenname&quot; hinter dem Element ergänzt.</p>
         </div>
         <!-- Kapitel 5: Strukturelemente -->
-        <div class="chapter" id="chapter05">
+        <div class="chapter">
+          <div class="jump" id="chapter05"></div>
           <p class="heading">Kapitel 5: Strukturelemente<hr></p>
           <p class="text">In HTML gibt es sogenannte Strukturelemente, diese sind dafür da, um die Webseite in bestimmte Bereiche zu unterteilen und gleichzeitig den Code übersichtlicher zu gestalten.</p>
           <p class="text">In diesem Kapitel werden wir folgende Strukturelemente kennenlernen: header, main und footer.</p>
@@ -236,7 +245,8 @@
           </p>
         </div>
         <!-- Kapitel 6: Das CSS Box Model -->
-        <div class="chapter" id="chapter06">
+        <div class="chapter">
+          <div class="jump" id="chapter06"></div>
           <p class="heading">Kapitel 6: Das CSS Box Model<hr></p>
           <p class="text">Das Box Modell ist eine Box, welche sich um jedes HTML Element wickelt.<br> Es besteht aus: content, padding, border und margin.</p>
           <p class="text">Der Content ist der Inhalt des HTML Elements, man kann seine Größe mit width und height verändern.</p>
@@ -245,7 +255,8 @@
           <p class="text">Margin ist der Abstand von der Border zum nächsten HTML Element, man kann die Größe mit margin bestimmen.</p>
         </div>
         <!-- Kapitel 7: Hover und Active-->
-        <div class="chapter" id="chapter07">
+        <div class="chapter">
+          <div class="jump" id="chapter07"></div>
           <p class="heading">Kapitel 7: Hover und Active<hr></p>
           <p class="text">Mit hover und active kann man in CSS bestimmte Eigenschaften auf ein Element anwenden, wenn man mit dem Mauszeiger draufzeigt (hover) oder dieses drückt (active).</p>
           <p class="text">Hier ein Codebeispiel wo hover und active auf die button-blue Klasse aus Kapitel 4 angewandt sind:</p>
@@ -275,7 +286,8 @@
           <p class="text">Die transition Eigenschaft sorgt dafür, dass ein kleiner Übergang beim Ändern der Werte entsteht.</p>
         </div>
         <!-- Kapitel 8: Das div Element -->
-        <div class="chapter" id="chapter08">
+        <div class="chapter">
+          <div class="jump" id="chapter08"></div>
           <p class="heading">Kapitel 8: Das div Element<hr></p>
           <p class="text">Das div Element ist eine Box, um andere Elemente aufzubewahren, mit welcher man dann seine komplette Webseite strukturieren kann.<br> Deshalb wird es auch als eines der wichtigsten HTML Elemente bezeichnet.</p>
           <p class="text">Wir werden und das div Element jetzt anhand eines Code Beispiels etwas genauer ansehen:</p>
@@ -297,7 +309,8 @@
           <p class="text">Jetzt sollten sich die beiden divs in einer Zeile befinden, da wir den Displaytyp zu inline-block geändert haben, was dafür sorgt, dass die div nur so viel Platz einnimmt, wie sie benötigt.<br> Der Standarddisplaytyp einer div ist block und sorgt dafür, dass ein Element immer eine ganze Zeile einnimmt.</p>
         </div>
         <!-- Kapitel 9: CSS Grid -->
-        <div class="chapter" id="chapter09">
+        <div class="chapter">
+          <div class="jump" id="chapter09"></div>
           <p class="heading">Kapitel 9: CSS Grid<hr></p>
           <p class="text">Das CSS Grid bietet die Möglichkeit, mehrere Divs nach einem von dir vorgegebenen Muster anzuordnen.</p>
           <p class="text">Funktionieren tut das Ganze so:</p>
