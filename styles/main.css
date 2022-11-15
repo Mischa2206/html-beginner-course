@@ -29,6 +29,20 @@ hr {
 html {
   font-family: Roboto, Arial;
   scroll-behavior: smooth;
+  scroll-padding-top: 160px;
+}
+
+nav {
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  width: 100%;
+  overflow: auto;
+  transition: 0.15s;
+  text-align: center;
 }
 
 p {
@@ -49,6 +63,21 @@ p {
 .chapter{
   margin-bottom: 40px;
   overflow-wrap: break-word;
+}
+
+.close-button {
+  content: "";
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.close-button:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .code-example {
@@ -74,6 +103,7 @@ p {
 
 .header {
   position: sticky;
+  text-align: center;
   top: 0px;
   background-color: rgb(40, 42, 49);
   padding: 15px;
@@ -88,10 +118,10 @@ p {
 }
 
 .jump {
-  visibility: hidden;
+  /* visibility: hidden;
   height: 0 !important;
   position: absolute;
-  margin: -160px;
+  margin: -160px; */
 }
 
 .link {
@@ -117,16 +147,12 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   transition: 0.15s;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
 }
 
 .nav-button:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 22px;
-  padding-right: 22px;
+  text-decoration: underline;
 }
 
 .nav-button:active {
@@ -134,7 +160,7 @@ p {
 }
 
 .nav-div {
-  text-align: center;
+
 }
 
 .page-author {
@@ -147,9 +173,40 @@ p {
   line-height: 1.3;
 }
 
+/* @media screen and (max-width: 500px) {
+  nav .nav-button {
+    display: block;
+  }
+} */
+
 @media (orientation: portrait) {
   .grid-container {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  nav .nav-button {
+    display: block;
+    height: 50px;
+  }
+
+  .close-button {
+    height: 20px;
+  }
+
+  .text {
+    color: rgba(255, 255, 255, 0.80s);
+  }
+}
+
+@media (max-width: 870px) {
+  .header {
+    position: static;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait){
+  .jump {
+    margin: 0;
   }
 }
