@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -66,8 +67,14 @@
         <button class="nav-button" onclick="location.href='#chapter09'">
           Kapitel 9
         </button>
+        <button class="nav-button" onclick="location.href='#contact'">
+          Kontakt
+        </button>
+        <button class="nav-button" onclick="location.href='/impressum.html'">
+          Impressum
+        </button>
       </nav>
-      <button class="close-button" id="close-button">expand</button>
+      <button class="close-button" id="close-button"><i class="material-icons" style="font-size:25px;">menu</i></button>
 
       <script src="js/nav.js" async defer></script>
     </header>
@@ -340,7 +347,23 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+        <form id="contact" method="post" action="send.php">
+          <label class="contact" for="vorname">Name</label>
+          <input class="contact" id="name" type="text" name="name" placeholder="Name" required>
+
+          <label class="contact" for="email">Email</label>
+          <input class="contact" id="email" type="email" placeholder="Email" name="email" required>
+
+          <label class="contact" for="subject">Thema</label>
+          <input class="contact" type="text" id="subject" name="subject" placeholder="Thema" required>
+
+          <label class="contact" for="vorschlag">Vorschlag</label>
+          <textarea class="contact" id="vorschlag" placeholder="Was soll ich hinzufügen?" cols="60" rows="10" name="message" required></textarea>
+
+          <input type="submit" value="send">
+        </form>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>

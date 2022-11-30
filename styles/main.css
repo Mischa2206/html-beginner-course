@@ -1,10 +1,20 @@
 * {
   padding: 0;
   margin: 0;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 body {
   background-color: rgb(28, 29, 34);
+}
+
+footer {
+  text-align: center;
+}
+
+form {
+  margin-left: 28%;
+  margin-right: 28%;
 }
 
 h1 {
@@ -13,6 +23,7 @@ h1 {
   text-align: center;
   margin: 0px;
   margin-top: 10px;
+  padding-top: 10px;
 }
 
 hr {
@@ -32,13 +43,18 @@ html {
   scroll-padding-top: 160px;
 }
 
+input {
+  display: block;
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 nav {
   visibility: hidden;
   opacity: 0;
-  height: 0px;
-
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* height: 0px; */
+  max-height: 0px;
   width: 100%;
   overflow: auto;
   transition: 0.15s;
@@ -49,6 +65,13 @@ p {
   color: rgba(255, 255, 255, 0.6);
   margin: 0px;
   margin-bottom: 6px;
+}
+
+textarea {
+  display: block;
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* ---------------------------------------- */
@@ -67,11 +90,26 @@ p {
 
 .close-button {
   content: "";
+  background-color: rgba(255, 255, 255, 0.00);
+  border: none;
+  color: white;
   padding-left: 30px;
   padding-right: 30px;
-  width: 100%;
-  transition: 2s;
+  height: 25px;
+  max-width: 500px;
+  border-radius: 25px;
+  transition: 0.15s;
   cursor: pointer;
+
+}
+
+.close-button:hover {
+  
+  cursor: pointer;
+}
+
+.close-button:active {
+  background-color: rgba(255, 255, 255, 0.00);
 }
 
 .close-button:after {
@@ -92,13 +130,40 @@ p {
   margin-bottom: 16px;
 }
 
+.contact {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+label.contact {
+}
+
+input.contact {
+  width: 100%;
+}
+
+.contact-button {
+  color: black;
+  width: 150px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 .grid-container {
   background-color: rgb(40, 42, 49);
   padding-top: 30px;
+  padding-bottom: 4px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 30px;
   margin-left: 28%;
   margin-right: 28%;
+  border-radius: 5px;
 }
 
 .header {
@@ -106,7 +171,6 @@ p {
   text-align: center;
   top: 0px;
   background-color: rgb(40, 42, 49);
-  padding: 15px;
   box-shadow: 0 1px 5px black;
   margin-bottom: 15px;
 }
@@ -188,10 +252,14 @@ p {
   nav .nav-button {
     display: block;
     height: 50px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
   }
 
   .close-button {
     height: 20px;
+    width: 100%;
   }
 
   .text {
@@ -208,5 +276,11 @@ p {
 @media (max-width: 360px) and (orientation: portrait){
   .jump {
     margin: 0;
+  }
+}
+
+@media (hover: hover) {
+  .close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
